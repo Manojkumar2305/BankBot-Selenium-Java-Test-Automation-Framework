@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-26T18:17:26 IST" name="BankBot Suite" finished-at="2026-04-26T18:20:05 IST" duration-ms="159601">
+    <groups>
+    </groups>
+    <test started-at="2026-04-26T18:17:26 IST" name="BankBot Tests" finished-at="2026-04-26T18:20:05 IST" duration-ms="159601">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:17:26 IST" name="setUp" finished-at="2026-04-26T18:17:38 IST" duration-ms="12608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLoginAlert()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:17:38 IST" name="testInvalidLoginAlert" finished-at="2026-04-26T18:17:43 IST" duration-ms="4936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:17:43 IST" name="tearDown" finished-at="2026-04-26T18:17:44 IST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:17:44 IST" name="setUp" finished-at="2026-04-26T18:17:57 IST" duration-ms="12830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:17:57 IST" name="testLogin" data-provider="loginData" finished-at="2026-04-26T18:18:04 IST" duration-ms="7539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr658981]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[avEgYzU]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:18:04 IST" name="tearDown" finished-at="2026-04-26T18:18:05 IST" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:18:05 IST" name="setUp" finished-at="2026-04-26T18:18:07 IST" duration-ms="1841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean)[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:18:07 IST" name="testLogin" data-provider="loginData" finished-at="2026-04-26T18:18:23 IST" duration-ms="16192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:18:24 IST" name="tearDown" finished-at="2026-04-26T18:18:24 IST" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:18:24 IST" name="setUp" finished-at="2026-04-26T18:18:40 IST" duration-ms="16141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testScreenshotDemo()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:18:40 IST" name="testScreenshotDemo" finished-at="2026-04-26T18:18:41 IST" duration-ms="524" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Screenshot with filled invalid credentials]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Screenshot with filled invalid credentials
+at org.testng.Assert.fail(Assert.java:111)
+at tests.LoginTest.testScreenshotDemo(LoginTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScreenshotDemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@34bde49d]" started-at="2026-04-26T18:18:41 IST" name="tearDown" finished-at="2026-04-26T18:18:41 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.AccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AccountTest@41330d4f]" started-at="2026-04-26T18:19:05 IST" name="setUp" finished-at="2026-04-26T18:19:18 IST" duration-ms="13456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateAccount()[pri:0, instance:tests.AccountTest@41330d4f]" started-at="2026-04-26T18:19:18 IST" name="testCreateAccount" finished-at="2026-04-26T18:19:35 IST" duration-ms="17274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AccountTest@41330d4f]" started-at="2026-04-26T18:19:35 IST" name="tearDown" finished-at="2026-04-26T18:19:35 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AccountTest -->
+      <class name="tests.CustomerTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerTest@38145825]" started-at="2026-04-26T18:18:41 IST" name="setUp" finished-at="2026-04-26T18:18:48 IST" duration-ms="7186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateCustomer()[pri:0, instance:tests.CustomerTest@38145825]" started-at="2026-04-26T18:18:48 IST" name="testCreateCustomer" finished-at="2026-04-26T18:19:04 IST" duration-ms="15854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerTest@38145825]" started-at="2026-04-26T18:19:04 IST" name="tearDown" finished-at="2026-04-26T18:19:05 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CustomerTest -->
+      <class name="tests.FundTransferTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FundTransferTest@1b66c0fb]" started-at="2026-04-26T18:19:35 IST" name="setUp" finished-at="2026-04-26T18:19:37 IST" duration-ms="1916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFundTransfer()[pri:0, instance:tests.FundTransferTest@1b66c0fb]" started-at="2026-04-26T18:19:37 IST" name="testFundTransfer" finished-at="2026-04-26T18:20:05 IST" duration-ms="27525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFundTransfer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FundTransferTest@1b66c0fb]" started-at="2026-04-26T18:20:05 IST" name="tearDown" finished-at="2026-04-26T18:20:05 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FundTransferTest -->
+    </test> <!-- BankBot Tests -->
+  </suite> <!-- BankBot Suite -->
+</testng-results>
